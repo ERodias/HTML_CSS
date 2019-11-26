@@ -7,101 +7,88 @@
 </head>
 <body>
     <style>
-
         body{
-            background-color:moccasin;
+            background-color:ivory;
         }
-        #name{
-            text-align:left;
+
+        #ContactInfo{
+            margin-bottom:0px;
+        }
+        #cont{
+            margin-top:1px;
         }
         h1{
             text-align:center;
+            font-size:55px;
+            color:darkslategrey;
         }
         #navigation{
-            background-color: rgb(172, 158, 138);
+        
             list-style-type: none;
             float:left;
-            width:250px;
-            margin:16px;
-            padding:20px;
-            border:2px ridge cadetblue;
+            display:flex;
+            flex-direction:column;
             position:absolute;
-            top:280px;
+            top:390px;
             font-size:20px;
+
         }
 
-        #About_me{
-            float:right;
-            border:0.5px ridge lightslategray;
-            padding:80px;
-            margin:40px;
-            width:650px;
-            font-size:17px;
+        #navigation li{
+            border: none;
+            background-color: rgb(99, 169, 192);
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+        #navigation li:hover {opacity: 1}  
+        
+        img {
+            width:200px;
             
-            top:260px;
         }
-
-        #Educ{
-            float:right;
-            border:0.5px ridge lightslategray;
-            padding:80px;
+       
+        #About_me, #Educ, #Prof_Exper, #Publication, #Language, #PC_Knowledge{
+            float:center;
+            border-bottom: 2px solid black;
+            padding:40px;
             margin:40px;
-            width:650px;
+            width:auto;
             font-size:17px;
-            top:460px;
-        }
-        #Prof_Exper{
-            float:right;
-            border:0.5px ridge lightslategray;
-            padding:80px;
-            margin:40px;
-            width:650px;
-            font-size:17px;
-            top:660px;
+            margin-left: 360px;
         }
 
-        #Publication{
-            float:right;
-            border:0.5px ridge lightslategray;
-            padding:80px;
-            margin:40px;
-            width:650px;
-            font-size:17px;
-            top:860px;
-        }
-        #Language{
-            float:right;
-            border:0.5px ridge lightslategray;
-            padding:80px;
-            margin:40px;
-            width:650px;
-            font-size:17px;
-            top:860px;
+        #BasicInfo {
+            text-align:center;
         }
 
-
-
+        #name{
+            font-size:25px;
+        }
 
     </style>
-    <h1> Curriculum Vitae</h1>
-    
-        <h3 id="name">Efthymios Rodias</h3>
-        <h4 id="ContactInfo"> Contact Info</h4>
-        <p>email: efthimisr@yahoo.gr<br>
-        Tel: 6972 315071</p>
-        <img src="BioPic.jpg" width="150px"/>
-    
-    <div id="navigation">
-        <li><a href="#About_me">About me</a></li>
-        <li><a href="#Educ">Education</a></li>
-        <li><a href="#Prof_Exper">Professional Experience</a></li>
-        <li><a href="#Publication">Publications/Conferences</a></li>
-        <li><a href="#Language">Language Knowledge</a></li>
-        <li><a href="#PC_Knowledge">Computers Knowledge</a></li>
-    </div>
-    <div class="info">
-        <p id="About_me"><strong>About me</strong><br>
-            <br>
+        <h1> Curriculum Vitae</h1>
+        <div id="BasicInfo">
+            <h3 id="name">Efthymios Rodias</h3>
+            <h4 id="ContactInfo"> Contact Info</h4>
+            <p id="cont">email: efthimisr@yahoo.gr<br>
+            Tel: 6972 315071</p>
+            <img src="BioPic.jpg" alt="CV Picture"/>
+        </div>
+        <ul id="navigation">
+            <li><a href="#About_me">About me</a></li>
+            <li><a href="#Educ">Education</a></li>
+            <li><a href="#Prof_Exper">Professional Experience</a></li>
+            <li><a href="#Publication">Publications/ Conferences</a></li>
+            <li><a href="#Language">Language Knowledge</a></li>
+            <li><a href="#PC_Knowledge">Computers Knowledge</a></li>
+        </ul>
+        <div class="info">
+            <p id="About_me"><strong>About me</strong><br>
+                <br>
             I am a Phd candidate in Department of Agricultural, Forestry and Food Sciences 
             of University of Turin, Italy. I have been graduated from Agricultural University of Athens – 
             Department of Natural Resources and Agricultural Engineering and I hold an MSc 
@@ -109,8 +96,8 @@
             in bio-production, optimization of resources in agrifood and agricultural processes, energy crops 
             assessment for biomass production and CO2 emissions evaluation in crop production systems.
 
-        </p> 
-        <p id="Educ"><strong>Education</strong><br>
+            </p> 
+            <p id="Educ"><strong>Education</strong><br>
             <br>
             2016 – now: PhD student in Agricultural, Forest and Food Sciences 
             in Doctoral School of Sciences and Innovative Technologies, University of Turin. <br>
@@ -119,10 +106,9 @@
             and Agricultural Engineering Department, Agricultural University of Athens (8.42/10).<br>
             2010: 3-months Erasmus placement in Department of Biosystems Engineering, Aarhus University, Denmark.<br>
             2010 : Five years’ double degree in Natural Resources and Agricultural Engineering 
-            Department, Agricultural University of Athens. Degree ‘Very good’ (6.85/10).<br>
-                
-        </p>
-        <p id="Prof_Exper"><strong>Professional Experience</strong><br>
+            Department, Agricultural University of Athens. Degree ‘Very good’ (6.85/10).<br>      
+            </p>
+            <p id="Prof_Exper"><strong>Professional Experience</strong><br>
             <br>
             2017: Member of Reviewers Team of CIOSTA Conference 2017 <br>
             2017: Member of Scientific Committee and Reviewers Team of HAICTA 2017 <br>
@@ -196,6 +182,15 @@
         <p id="Language"><strong>Language Knowledge</strong><br>
             English: Certificate of Proficiency in English, University of Michigan.
         </p>
+        <div id="PC_Knowledge"><strong>Computers Knowledge</strong><br>
+            <ul>
+                <li>Microsoft Windows Internet</li>
+                <li>Microsoft Office (Word, Excel, Powerpoint)</li>
+                <li>AUTOCAD</li>
+                <li>MatLab</li>
+                <li>ArcGIS</li>
+            </ul>
+            </div> 
     </div>
        
     
