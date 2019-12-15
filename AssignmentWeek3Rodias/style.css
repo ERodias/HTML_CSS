@@ -1,0 +1,32 @@
+#lgt{
+    justify-content: center;
+    min-height: 80px;
+    /* margin-left:-25px; */
+}
+
+/* .img-fluid{
+    max-width:100%;
+    justify-content:stretch;
+} */
+/* 
+.bg-img{
+    background-image: url("https:/www.government.nl/binaries/large/content/gallery/government/attentie-afbeeldingen/home/markthal-rotterdam-hero.jpg");
+
+    min-height:21rem;
+} */
+
+#Head_text{
+   margin-top: 17px; 
+
+}
+/* h3{
+    color:#01689b;
+    font-size:1.45rem;
+    line-height:1.2rem
+} */
+
+/* .card{
+    border:0px; 
+    border-radius: 0px;
+} */
+
